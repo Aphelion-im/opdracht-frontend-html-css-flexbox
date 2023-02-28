@@ -1,1 +1,44 @@
 /*Schrijf hier jouw CSS*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  flex: 0 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto; /* MDN 3 value syntax: flex: grow | shrink | basis */
+}
+
+article {
+  order: 1;
+  flex: 1 1 60vw;
+}
+
+nav {
+  order: 3;
+  flex: 1 0 20vw;
+}
+
+aside {
+  order: 2;
+  flex: 1 0 20vw;
+}
